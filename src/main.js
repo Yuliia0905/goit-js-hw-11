@@ -7,6 +7,8 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import { imagesTemplate, imageTemplate } from './js/render-functions';
 import { getImages } from './js/pixabay-api';
 
+import imageURL from './img/error.svg';
+
 const formElem = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.lds-roller');
@@ -26,7 +28,7 @@ formElem.addEventListener('submit', e => {
       maxWidth: '360px',
       theme: 'dark',
       messageColor: 'white',
-      iconUrl: '../img/error.svg',
+      iconUrl: imageURL,
       message:
         'Sorry, there are no images matching your search query. Please try again!',
     });
