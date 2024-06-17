@@ -4,7 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import { imagesTemplate, imageTemplate } from './js/render-functions';
+import { imagesTemplate } from './js/render-functions';
 import { getImages } from './js/pixabay-api';
 
 import imageURL from './img/error.svg';

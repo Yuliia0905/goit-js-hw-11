@@ -5,7 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-/* @import url('./header.css'); */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -25,7 +24,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -48,11 +46,7 @@ body {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  font-size: 16px;
-
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
 }
 
 .button-search:hover,
@@ -68,9 +62,6 @@ body {
   font: inherit;
   outline: transparent;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   padding-left: 5px;
 }
 
@@ -83,11 +74,9 @@ body {
 }
 
 .text {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33333;
-  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 

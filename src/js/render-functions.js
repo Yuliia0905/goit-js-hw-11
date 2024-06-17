@@ -1,4 +1,4 @@
-export function imageTemplate(image) {
+function imageTemplate(image) {
   return `<li class="gallery-item">
       <a href="${image.largeImageURL}"><img src="${image.webformatURL}" alt="${image.tags}" class="gallery-image"></a>
         <ul class="info-list">
