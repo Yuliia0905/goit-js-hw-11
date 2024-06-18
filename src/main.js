@@ -29,14 +29,25 @@ formElem.addEventListener('submit', e => {
       theme: 'dark',
       messageColor: 'white',
       iconUrl: imageURL,
-      message:
-        'Sorry, there are no images matching your search query. Please try again!',
+      message: 'Please enter the data for the request',
+      //     'Sorry, there are no images matching your search query. Please try again!',
     });
     return;
   }
   showLoader();
   getImages(image)
     .then(data => {
+      if (data.hits.length === 0) {
+        iziToast.error({
+          position: 'topRight',
+          maxWidth: '360px',
+          theme: 'dark',
+          messageColor: 'white',
+          iconUrl: imageURL,
+          message:
+            'Sorry, there are no images matching your search query. Please try again!',
+        });
+      }
       const markup = imagesTemplate(data.hits);
       gallery.innerHTML = markup;
       lightBox.refresh();
